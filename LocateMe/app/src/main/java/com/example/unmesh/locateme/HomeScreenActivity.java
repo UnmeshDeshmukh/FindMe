@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeScreenActivity extends AppCompatActivity {
-    LocationTracker currentLocation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
