@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.unmesh.locateme.MapScreenActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/campusImage"
+
+        android:src="@drawable/campusmap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="69dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/EnggImageView"
+        android:layout_marginEnd="133dp"
+        android:layout_marginTop="174dp"
+        android:src="@drawable/dest"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/campusImage"
+        android:layout_alignEnd="@+id/campusImage" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/SUimageView"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/dest"
+        android:visibility="invisible"
+        android:layout_below="@+id/EnggImageView"
+        android:layout_alignStart="@+id/EnggImageView" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/SGimageView"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="81dp"
+        android:src="@drawable/dest"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/campusImage"
+        android:layout_toStartOf="@+id/SUimageView" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/YUHimageView"
+        android:layout_marginTop="49dp"
+        android:src="@drawable/dest"
+        android:visibility="invisible"
+        android:layout_below="@+id/SUimageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/BBCimageView"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/dest"
+        android:visibility="invisible"
+        android:layout_below="@+id/SUimageView"
+        android:layout_alignEnd="@+id/campusImage" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/MLKimageView"
+        android:src="@drawable/dest"
+        android:visibility="invisible"
+        android:layout_above="@+id/SUimageView"
+        android:layout_alignStart="@+id/YUHimageView" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/invisibleImage"
+        android:visibility="invisible"
+        android:src="@drawable/invisibleimage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="69dp" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_building_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:context="com.example.unmesh.locateme.BuildingDetailActivity"
+    android:background="@android:color/transparent">
+
+
+    <ImageView
+        android:id="@+id/buildingImage"
+
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        app:srcCompat="@drawable/addwalk"
+        android:id="@+id/addressImage"
+        android:layout_marginTop="18dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buildingImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/destAddr"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:layout_marginStart="12dp"
+        android:layout_alignBottom="@+id/addressImage"
+        android:layout_below="@+id/buildingImage"
+        android:layout_toEndOf="@+id/addressImage"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:text="StreetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getLocation"
+        android:elevation="16dp"
+
+
+        android:layout_marginEnd="16dp"
+        android:layout_alignBottom="@+id/buildingImage"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        app:srcCompat="@drawable/dist"
+        android:id="@+id/distanceImage"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/addressImage"
+        android:layout_alignStart="@+id/addressImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/travelDistanceField"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:layout_alignTop="@+id/distanceImage"
+        android:layout_toEndOf="@+id/distanceImage"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <ImageView
+        app:srcCompat="@drawable/duration"
+        android:id="@+id/duration"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/distanceImage"
+        android:layout_alignStart="@+id/distanceImage"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeDurationField"
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:layout_alignTop="@+id/duration"
+        android:layout_toEndOf="@+id/duration"
+        android:layout_marginStart="15dp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
